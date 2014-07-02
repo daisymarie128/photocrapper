@@ -1,0 +1,16 @@
+<%== usernav %>
+
+<h2>Search</h2>
+<%= render :partial => 'form' %>
+
+
+  <% if @results == [] %>
+    <p> none </p>
+  <% end %>
+  <% @results.each do |result| %>
+    <div id="results">
+    <%= link_to(image_tag(result.image, :class => 'thumb'),result.title) %>
+    <%= link_to('ike this',like_work_path(result.id), :method => :post) %>
+
+    </div><!--////////close results /////-->
+  <% end %>

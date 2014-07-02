@@ -1,0 +1,12 @@
+<%== usernav %>
+
+<% @works.each do |work| %>
+<div id="works">
+
+  <%= link_to(image_tag(work.image_url(:thumb)),work) %>
+  <p><%= work.title %></p>
+  <p><%= work.tags %></p>
+  <p><%= work.desription %></p><br>
+    <%= link_to 'delete', work, :method => :delete, :data => {:confirm => 'Are you sure?'} %>
+</div><!--////////close works //////-->
+  <% end %>

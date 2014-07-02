@@ -1,0 +1,22 @@
+<%= form_for @work do |f| %>
+<p><%= f.label :title, "Title:" %>
+<%= f.text_field :title, :autofocus => true %>
+</p>
+
+<p>
+  <%= f.label :image %>
+  <%= f.file_field :image %>
+  <%= f.hidden_field :image_cache %>
+</p>
+
+
+<p><%= f.label :tags, "Tags:" %>
+<%= f.text_field :tags %>
+</p>
+
+<p><%= f.label :desription, "Description:" %>
+<%= f.text_field :desription %>
+</p>
+
+<%= f.submit %>
+<% end %>
