@@ -13,6 +13,7 @@
 
 class User < ActiveRecord::Base
   has_secure_password
+  mount_uploader :image, ImageUploader
   has_many :works
   has_many :followers, :dependent => :destroy
   has_many :friends, :through => :followers
