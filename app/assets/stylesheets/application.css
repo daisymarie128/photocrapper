@@ -124,17 +124,16 @@ h1{
     text-transform: uppercase;
   }
 
-/*    #results img{
+    #results img{
     max-width: 100%;
     min-width: 100%;
-    min-height: 20%;
-    max-height: 20%;
+    height: 100px;
   }
 
   #results{
     width: 40%;
     display: inline-block;
-  }*/
+  }
 
 }
 
