@@ -14,4 +14,6 @@
 class User < ActiveRecord::Base
   has_secure_password
   has_many :works
+  has_many :followers, :dependent => :destroy
+  has_many :friends, :through => :followers
 end

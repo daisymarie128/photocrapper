@@ -1,0 +1,33 @@
+  <%== usernav %>
+
+<div class="pagewrap">
+
+<div class="userworks">
+  <% @user.works.each do |works| %>
+  <div class="userworksimag">
+  <ul>
+    <!-- this is how you link to a users page and see all their shit -->
+    <li><%= image_tag(works.image) %></li>
+    <li><%= works.title %></li>
+    <li><%= works.tags %></li>
+    <li><%= works.desription %></li>
+  </ul>
+</div><!--////////close worksimage //////-->
+<% end %>
+</div><!--////////close works //////-->
+
+<div class="bar">
+</div><!--//////close bar /////-->
+
+<div class="userdata">
+  <ul>
+  <li><h3><%= @user.username %></h3></li>
+  <li><%= image_tag(@current_user.avatar) %></li>
+  <li><%= @user.location %></li>
+  <%= link_to('FOLLOW', "/follow/#{@user.username}", :method => :post)%></li>
+  <%= link_to('UNFOLLOW', "/unfollow/#{@user.username}",:method => :delete) %></li>
+</ul>
+
+</div><!--//////close userdata ////// -->
+
+</div><!--//////close pagewrap ////// -->

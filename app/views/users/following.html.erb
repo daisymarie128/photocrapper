@@ -1,0 +1,25 @@
+<%== usernav %>
+
+<div class="followingshow">
+<% @current_user.friends.each do |following| %>
+  <div class="useravatar">
+  <li><%= link_to(image_tag(following.avatar, :class => 'thumb'),work_path(following)) %></li>
+</div><!--///////// close user avatar ////// -->
+<div class="followingname">
+  <li><%= link_to(following.username, work_path(following)) %>
+  </div><!--/////// close followingname ////////-->
+<% end %>
+
+</div><!--/////// close followingshow //////-->
+
+<div class="userdata">
+  <ul>
+  <li><h3><%= @current_user.username %></h3></li>
+  <li><%= image_tag(@current_user.avatar) %></li>
+  <li><%= @current_user.location %></li>
+
+  <li><%= link_to('FOLLOWERS', '/followers') %></li>
+  <li><%= link_to('FOLLOWING', '/following')  %></li>
+</ul>
+
+</div><!--//////close userdata ////// -->

@@ -21,17 +21,26 @@ class WorksController < ApplicationController
   end
 
   def like
+    # raise params.inspect
     @work = Work.find params[:id]
-    @work.likes +=1
+    @work.likes.new
     @work.save
+    # #MOST OF THIS SHIT IS WRONG DELETE IT (next three lines)
+    # @likes = []
+    # @liker = @current_user
+    # @likes << @liker
+    # @work.likes +=1
+    # @work.save
     # @like = nil
     # @like = @like + 1
     # @likes = like.count
+    redirect_to '/explore'
   end
 
 
   def show
     @work = Work.find params[:id]
+
   end
 
   def destroy

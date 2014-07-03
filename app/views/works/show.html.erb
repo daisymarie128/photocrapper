@@ -1,8 +1,17 @@
   <%== usernav %>
+<div class="pagewrap">
+
+  <div class="singlework">
   <ul>
-    <li><%= @work.title %></li>
-    <li><%= image_tag(@work.image) %></li>
-    <li><%= @work.title %></li>
-    <li><%= @work.tags %></li>
-    <li><%= @work.desription %></li>
+    <% if @work.user %>
+    <li><%= link_to((@work.user.username),user_path(@work.user.username)) %></li>
+    <% end %>
+    <li><p><%= image_tag(@work.image) %></p></li>
+    <li><p><%= @work.title %></p></li>
+    <li><p><%= @work.tags %></p></li>
+    <li><p><%= @work.desription %></p></li>
   </ul>
+
+</div><!--//////close singlework////// -->
+
+</div><!--//////close pagewrap ////// -->

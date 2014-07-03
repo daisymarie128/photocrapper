@@ -6,6 +6,7 @@
 #  likes      :integer
 #  created_at :datetime
 #  updated_at :datetime
+#  work_id    :integer
 #
 
 class Like < ActiveRecord::Base

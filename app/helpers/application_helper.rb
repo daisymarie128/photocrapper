@@ -1,20 +1,20 @@
 module ApplicationHelper
   def smartnav
-    links = ''
+    links = '<div id="nav">'
     if @current_user.try(:is_admin)
-      links += "<li>" + link_to('View users', users_path) + "</li>"
+      links += "<li><h2>" + link_to('View users', users_path) + "/<h2></li>"
     end
 
     if @current_user.present?
-      links += "<li>"
+      links += "<li><h2>"
       links += link_to('Logout ' + @current_user.username, login_path, :data => {:method => :delete, :confirm => 'Really logout?'})
-      links += "</li>"
+      links += "</h2></li>"
     else
-      links += "<li>#{ link_to('Sign up', new_user_path) }</li>"
-      links += "<li>#{ link_to('Sign in', login_path) }</li>"
+      links += "<li><h2>#{ link_to('Sign up', new_user_path) }</h2></li>"
+      links += "<li><h2>#{ link_to('Sign in', login_path) }</h2></li>"
     end
 
-    links
+    links + '</div>'
   end
 
   def usernav
@@ -23,11 +23,9 @@ module ApplicationHelper
 
     if @current_user.present?
 
-    links += "<li>" + link_to('Home', '/') + "</li>"
-    links += "<li>" + link_to('Explore', '/explore' ) + "</li>"
-    links += "<li>" + link_to('Notifications', '#') + "</li>"
-    links += "<li>" + link_to('My Stuff', works_path) + "</li>"
-    links += "<li>" + link_to('Upload', new_work_path) + "</li>"
+    links += "<li><h2>" + link_to('Explore', '/explore' ) + "</h2></li>"
+    links += "<li><h2>" + link_to('My Stuff', works_path) + "</h2></li>"
+    links += "<li><h2>" + link_to('Upload', new_work_path) + "</h2></li>"
 
   end
       links + '</div>'

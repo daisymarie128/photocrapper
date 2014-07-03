@@ -1,19 +1,27 @@
+<div id="signup">
+<h2>Create new User</h2>
 <%= form_for @user do |f| %>
-<p><%= f.label :username, "Username:" %>
+<h2><%= f.label :username, "Username:" %>
 <%= f.text_field :username, :autofocus => true %>
-</p>
+</h2>
 
-<p><%= f.label :avatar, "Avatar:" %>
+<h2><%= f.label :avatar, "Avatar:" %>
 <%= f.url_field :avatar %>
-</p>
+</h2>
 
-<p><%= f.label :password, "Password:" %>
+<h2><%= f.label :location, "Location:" %>
+<%= f.text_field :location %>
+</h2>
+
+<h2><%= f.label :password, "Password:" %>
 <%= f.password_field :password %>
-</p>
+</h2>
 
-<p><%= f.label :password_confirmation, "Confirm Password:" %>
+<h2><%= f.label :password_confirmation, "Confirm Password:" %>
 <%= f.password_field :password_confirmation %>
-</p>
+</h2>
 
 <%= f.submit %>
 <% end %>
+
+</div><!--/////// close signup //////-->

@@ -1,0 +1,25 @@
+<%== usernav %>
+
+<div class="folowershow">
+<% @User.all.where(friends.username => @current_user.username).each do |followers| %>
+  <div class="useravatar">
+  <li><%= link_to(image_tag(followers.avatar, :class => 'thumb'),work_path(followers)) %></li>
+</div><!--///////// close user avatar ////// -->
+<div class="followersname">
+  <li><%= link_to(followers.username, work_path(followers)) %>
+  </div><!--/////// close followersname ////////-->
+<% end %>
+
+</div><!--/////// close followershow //////-->
+
+<div class="userdata">
+  <ul>
+  <li><h3><%= @current_user.username %></h3></li>
+  <li><%= image_tag(@current_user.avatar) %></li>
+  <li><%= @current_user.location %></li>
+
+  <li><%= link_to('FOLLOWERS', '/followers') %></li>
+  <li><%= link_to('FOLLOWING', '/following')  %></li>
+</ul>
+
+</div><!--//////close userdata ////// -->

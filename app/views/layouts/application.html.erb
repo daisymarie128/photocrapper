@@ -7,14 +7,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<nav>
-  <ul>
-    <li><%= link_to('Home', '/') %></li>
-      <%== smartnav %>
-    </ul>
-  </nav>
-<%= yield %>
-
+  <div id="container">
+    <header>
+      <h1>PHOTOCRAPPER</h1>
+      <nav>
+        <ul>
+            <%== smartnav %>
+        </ul>
+      </nav>
+    </header>
+    <div id="content">
+    <%= yield %>
+  </div><!--//////close content ////-->
+  <footer>
+    <div class="line"></div><!--///////////////////////////////////////////////close line//////////////-->
+    <div class="social">
+      <div class="circle-text"><a href="twitter.com"><div><img src="/assets/twitter-01.png"></div></a></div>
+  </footer>
+</div><!--//////// close contaier //////////-->
 </body>
 </html>

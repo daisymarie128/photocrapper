@@ -4,7 +4,11 @@
 
 <%== usernav %>
 
+<!-- generate random images from all users -->
+<!-- show the users images theyve created -->
 <div class="images">
-  <!-- /////////// put the code for images here ///////// -->
+  <% @user.works.each do |work| %>
+    <%= link_to(image_tag(work.image, :class => 'thumb'),work) %>
+      <% end %>
   </div><!--///////// close images ////////-->
 

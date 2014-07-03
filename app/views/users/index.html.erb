@@ -1,0 +1,11 @@
+<%== usernav %>
+<div class="pagewrap">
+
+<!-- show the users images theyve created -->
+<div class="images">
+  <% @user.works.each do |work| %>
+    <%= link_to(image_tag(work.image, :class => 'thumb'),work) %>
+      <% end %>
+  </div><!--///////// close images ////////-->
+
+  </div><!--//////close pagewrap ////// -->
