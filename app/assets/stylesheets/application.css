@@ -269,6 +269,7 @@ input[name=commit]{
   font-family: Avenir Next;
   font-style: italic;
   text-transform: uppercase;
+  border-radius: 0;
 }
 
 #signup label{
