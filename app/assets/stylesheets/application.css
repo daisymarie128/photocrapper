@@ -124,16 +124,17 @@ h1{
     text-transform: uppercase;
   }
 
-    #results img{
+/*    #results img{
     max-width: 100%;
     min-width: 100%;
-    min-height: 1%;
-    max-height: 1%;
+    min-height: 20%;
+    max-height: 20%;
   }
 
   #results{
+    width: 40%;
     display: inline-block;
-  }
+  }*/
 
 }
 
@@ -552,6 +553,7 @@ input[name=commit]{
 
 
 #results{
+  width: 20%;
   display: inline-block;
 }
 
