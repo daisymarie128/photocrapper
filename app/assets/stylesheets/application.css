@@ -126,12 +126,10 @@ h1{
 
     #results img{
     max-width: 100%;
-    height: 20px;
   }
 
   #results{
     width: 50%;
-    height: 20px;
     display: inline-block;
   }
 
