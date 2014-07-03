@@ -130,6 +130,7 @@ h1{
   }
 
   #results{
+    width: 50%;
     height: 20px;
     display: inline-block;
   }
