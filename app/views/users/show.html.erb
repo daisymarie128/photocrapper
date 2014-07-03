@@ -7,7 +7,7 @@
   <div class="userworksimag">
   <ul>
     <!-- this is how you link to a users page and see all their shit -->
-    <li><%= link_to(image_tag(works.image_url(:thumb)),work) %></li>
+    <li><%= image_tag(works.image_url(:thumb)) %></li>
     <li><%= works.title %></li>
     <li><%= works.tags %></li>
     <li><%= works.desription %></li>
