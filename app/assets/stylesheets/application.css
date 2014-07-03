@@ -127,8 +127,8 @@ h1{
     #results img{
     max-width: 100%;
     min-width: 100%;
-    min-height: 50px;
-    max-height: 50px;
+    min-height: 5%;
+    max-height: 5%;
     }
 
   #results{
