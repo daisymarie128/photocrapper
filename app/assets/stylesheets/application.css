@@ -569,7 +569,7 @@ input[name=commit]{
 #results img{
   max-width: 100%;
   min-width: 100%;
-  min-height: 20%;
+  min-height: 60%;
   max-height: 60%;
 }
 
