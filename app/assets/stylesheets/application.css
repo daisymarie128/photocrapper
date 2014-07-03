@@ -270,6 +270,7 @@ input[name=commit]{
   font-style: italic;
   text-transform: uppercase;
   border-radius: 0;
+  -webkit-appearance:none;
 }
 
 #signup label{
