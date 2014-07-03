@@ -52,7 +52,8 @@ end
   end
 
   def followers
-    @followers = User.all.where(User.friends.username => @current_user.username)
+    #@followers = User.all.where(User.friends.username => @current_user.username)
+    @followers = Follower.where(:friend_id => @current_user.id)
   end
 
   private
