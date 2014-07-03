@@ -9,7 +9,7 @@
   <% end %>
   <% @results.each do |result| %>
     <div id="results">
-    <%= link_to(image_tag(result.image, :class => 'thumb'),work_path(result)) %>
+    <%= link_to(image_tag(result.image_url(:thumb)),work_path(result)) %>
     <h4><%= link_to('like this',like_work_path(result.id), :method => :post) %>
     <%= result.likes.count %></h4>
 
