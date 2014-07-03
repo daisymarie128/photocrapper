@@ -115,7 +115,14 @@ h1{
   font-family: Avenir Next;
   font-style: italic;
   text-transform: uppercase;
-}
+  }
+
+  #login h2{
+    font-size: 2em;
+    font-family: Avenir Next;
+    font-style: italic;
+    text-transform: uppercase;
+  }
 }
 
 h2{
