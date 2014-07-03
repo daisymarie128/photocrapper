@@ -586,10 +586,10 @@ input[name=commit]{
 
 
 #results img{
-  max-width: 100%;
+/*  max-width: 100%;
   min-width: 100%;
   min-height: 50%;
-  max-height: 50%;
+  max-height: 50%;*/
 }
 
 /* /////////////////////////// usernav style //////////////*/
