@@ -383,6 +383,11 @@ input[name=commit]{
   color: #E8C53A;
 }
 
+.singlework img{
+  max-width: 70%;
+  max-height: 60%
+}
+
 /* /////////////////////////// eaplore user image style //////////////*/
 
 .userworks{
@@ -492,8 +497,10 @@ input[name=commit]{
 }
 
 .userworksimag img{
-  max-width:100%;
-  max-height:100%;
+  max-width: 100%;
+  min-width: 90%;
+  min-height: 20%;
+  max-height: 60%;
   vertical-align:top;
 }
 
@@ -502,6 +509,7 @@ input[name=commit]{
   width: 30%;
   display: inline-block;
 }
+
 
 /*.userworksimag:after {
     content:'\A';
@@ -523,9 +531,8 @@ input[name=commit]{
 
 
 #results{
-  width: 30%;
+  width: 20%;
   display: inline-block;
-  background-color: #E8C53A;
 }
 
 #results a{
@@ -538,6 +545,7 @@ input[name=commit]{
 }
 
 #results h4{
+  margin: 0;
   font-size: 1em;
   font-family: Avenir Next;
   font-style: italic;
@@ -559,8 +567,10 @@ input[name=commit]{
 
 
 #results img{
-  max-width:100%;
-  max-height:100%;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 20%;
+  max-height: 60%;
 }
 
 /* /////////////////////////// usernav style //////////////*/
