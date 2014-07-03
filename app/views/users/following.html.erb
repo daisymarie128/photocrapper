@@ -3,7 +3,7 @@
 <div class="followingshow">
 <% @current_user.friends.each do |following| %>
   <div class="useravatar">
-  <li><%= link_to(image_tag(following.avatar, :class => 'thumb'),work_path(following)) %></li>
+  <li><%= link_to(image_tag(following.avatar_url(:thumb)),work_path(following)) %></li>
 </div><!--///////// close user avatar ////// -->
 <div class="followingname">
   <li><%= link_to(following.username, work_path(following)) %>
