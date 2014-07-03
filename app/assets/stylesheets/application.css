@@ -132,7 +132,6 @@ h1{
   }
 
   #results{
-    width: 100%;
     display: inline-block;
   }
 
@@ -553,7 +552,6 @@ input[name=commit]{
 
 
 #results{
-  width: 20%;
   display: inline-block;
 }
 
