@@ -58,7 +58,7 @@ end
 
   private
   def user_params
-    params.require(:user).permit(:username, :avatar, :image_cache, :password, :password_confirmation)
+    params.require(:user).permit(:username, :avatar, :password, :password_confirmation)
   end
 
   #chech if the user is logged in. show only their stuff
