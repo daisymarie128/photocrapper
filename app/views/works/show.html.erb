@@ -14,18 +14,4 @@
 
 </div><!--//////close singlework////// -->
 
-<div class="bar">
-</div><!--//////close bar /////-->
-
-<div class="userdata">
-  <ul>
-  <li><h3><%= @user.username %></h3></li>
-  <li><%= image_tag(@current_user.avatar) %></li>
-  <li><%= @user.location %></li>
-  <%= link_to('FOLLOW', "/follow/#{@user.username}", :method => :post)%></li>
-  <%= link_to('UNFOLLOW', "/unfollow/#{@user.username}",:method => :delete) %></li>
-</ul>
-
-</div><!--//////close userdata ////// -->
-
 </div><!--//////close pagewrap ////// -->
