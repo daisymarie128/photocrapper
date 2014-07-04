@@ -1,10 +1,9 @@
   <%== usernav %>
 <div class="pagewrap">
-hjghjgjg
   <div class="singlework">
   <ul>
     <% if @work.user %>
-    <li><%= link_to((@work.user.username),user_path(@work.user.username)) %></li>
+    <li><h2><%= link_to((@work.user.username),user_path(@work.user.username)) %></h2></li>
     <% end %>
     <li><p><%= image_tag(@work.image_url(:thumb)) %></p></li>
     <li><p><%= @work.title %></p></li>

@@ -391,6 +391,14 @@ input[name=commit]{
   text-transform: uppercase;
 }
 
+.singlework li h2{
+  margin: 0;
+  font-size: 1em;
+  font-family: Avenir Next;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
 .singlework a{
   margin: 0;
   color: #000;
