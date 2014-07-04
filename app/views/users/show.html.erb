@@ -2,15 +2,15 @@
 
 <div class="pagewrap">
 <div class="userworks">
-  <% @user.works.each do |works| %>
+  <% @user.works.each do |work| %>
   <div class="userworksimag">
   <ul>
     <!-- this is how you link to a users page and see all their shit -->
-    <li><%= image_tag(works.image_url(:thumb)) %></li>
-    <li><%= link_to(image_tag(works.image_url(:thumb)),work_path) %></li>
-    <li><%= works.title %></li>
-    <li><%= works.tags %></li>
-    <li><%= works.desription %></li>
+    <li><%= image_tag(work.image_url(:thumb)) %></li>
+    <li><%= link_to(image_tag(work.image_url(:thumb)),work_path) %></li>
+    <li><%= work.title %></li>
+    <li><%= work.tags %></li>
+    <li><%= work.desription %></li>
   </ul>
 </div><!--////////close worksimage //////-->
 <% end %>
