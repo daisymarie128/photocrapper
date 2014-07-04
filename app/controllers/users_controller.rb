@@ -20,7 +20,6 @@ end
   #show individual users while signed in as current user
   def show
     @user = User.where(:username => params[:id]).first
-    @work = Work.find params[:id]
     #@user = User.where(User.works.find params[:id])
   end
 
