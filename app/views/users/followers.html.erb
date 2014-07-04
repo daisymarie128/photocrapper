@@ -6,7 +6,7 @@
 <div class="folowershow">
 <% @followers.each do |followers| %>
   <div class="useravatar">
-    <% if following.avatar? %>
+    <% if followers.avatar? %>
   <li><%= link_to(image_tag(followers.user.avatar_url(:thumb)),work_path(followers)) %></li>
     <% end %>
 </div><!--///////// close user avatar ////// -->
